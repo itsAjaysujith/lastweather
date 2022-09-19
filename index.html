@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="weth.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+</head>
+<style>
+    #back{
+     background-image: url(./images/skyyy.jpg);
+     background-size: cover;
+     height: 1000px;
+    }
+</style>
+<body id="back">
+    <h1 style="font-size: 35px;
+    margin-top: 37px;
+    color: aliceblue;
+    margin-left: 30px;">Myweather.com</h1>
+    
+    <div>
+      <input type="text" placeholder="select city" id="cname" ><br>
+      <button type="button" id="find" class="btn btn-info border" onclick="search()">search</button>
+
+</div>
+    <div class="container" id="first">
+        
+        <div id="cit" class="col-lg-3 xs-12 ">
+            <center>
+    <h1 style="font-size: 100px; padding:10px; margin-left:10px;">30c</h1><br>
+    <h2 style="font-size: 30px;">delhi</h2>
+</center>
+           
+        </div>
+        <div id="pic" class="col-lg-6 xm-12">
+           
+        </div>
+        <div id="temp" class="col-lg-3 xm-12">
+            <center>
+                <h1 style="padding: 75px;font-size: 40px;">clear</h1>
+               </center>
+       
+        </div>
+ 
+    </div>
+    <div class="container">
+        <div id="last1" class="col-lg-4 sm-12">
+            <center>
+                <h4 style="padding: 10px;">cordinates</h4>
+                <h6 >Longitude 36.8s</h6>
+                <h6 >Latitude 82e</h6>
+                    </center>
+        
+
+        </div>
+        <div id="last2" class="col-lg-4 sm-12">
+            <center>
+                <h4 style="padding: 10px;">humidity</h4>
+                <h6>35</h6>
+                </center>
+    
+
+        </div>
+        <div id="last3" class="col-lg-4 sm-12">
+            <center>
+                <h4 style="padding: 10px;">temperature range</h4>
+                <h6>maximum 25</h6>
+                <h6>minimum 24</h6>
+                </center>
+           
+
+        </div>
+
+
+    </div>
+</body>
+<script src="./weather.js"></script>
+</html>
